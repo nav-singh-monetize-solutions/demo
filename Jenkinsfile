@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'nginx --version'
+                sh 'nginx -v'
             }
         }
         stage('Deploy') {
